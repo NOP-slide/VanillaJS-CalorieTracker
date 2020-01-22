@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calorie Tracker - made with Vanilla JS</title>
+    <script src="https://kit.fontawesome.com/f023f10356.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-wrapper blue">
             <div class="container">
-                <a href="#!" class="brand-logo center">Calorie Tracker</a>
+                <a href="#!" class="brand-logo center hide-on-med-and-down">Calorie Tracker</a>
                 <ul class="right">
-                    <li><a href="#!" class="clear-btn btn-small blue lighten-3">Clear All</a></li>
+                    <li><a href="#!" class="clear-btn btn-small red lighten-1">Clear All</a></li>
                 </ul>
             </div>
         </div>
@@ -39,10 +40,16 @@
                             <input id="item-calories" type="number" placeholder="Add calories">
                             <label for="item-calories">Calories</label>
                         </div>
-                        <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
-                        <button class="update-btn btn orange"><i class="fa fa-pencil-square-o"></i> Update Meal</button>
-                        <button class="delete-btn btn red"><i class="fa fa-remove"></i> Delete Meal</button>
-                        <button class="back-btn btn grey right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
+                            <button class="update-btn btn orange"><i class="fa fa-pencil-square-o"></i> Update</button>
+                            <button class="delete-btn btn red"><i class="fa fa-remove"></i> <span
+                                    class="hide-on-med-and-down">Delete</span></button>
+                            <button class="back-btn btn grey right"><i class="fa fa-chevron-circle-left"></i> <span
+                                    class="hide-on-med-and-down">Back</span></button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -53,18 +60,7 @@
 
         <!-- Item list -->
         <ul id="item-list" class="collection">
-            <!-- <li class="collection-item" id="item-0">
-                <strong>Steak dinner: </strong> <em>1200 Calories</em>
-                <a href="#!" class="secondary-content"><i class="edit-item fa fa-pencil"></i></a>
-            </li>
-            <li class="collection-item" id="item-0">
-                <strong>Cookie: </strong> <em>350 Calories</em>
-                <a href="#!" class="secondary-content"><i class="edit-item fa fa-pencil"></i></a>
-            </li>
-            <li class="collection-item" id="item-0">
-                <strong>Taco Salad: </strong> <em>650 Calories</em>
-                <a href="#!" class="secondary-content"><i class="edit-item fa fa-pencil"></i></a>
-            </li> -->
+
         </ul>
     </div>
 
